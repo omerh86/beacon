@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">2 FIND</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_alert">AlertActivity</string>
+    <string name="title_activity_flashscreen">Flashscreen</string>
+</resources>

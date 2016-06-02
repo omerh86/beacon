@@ -1,0 +1,196 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CBCBCB">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="7dp"
+        android:background="#CBCBCB"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Contacts" />
+
+        <ListView
+            android:id="@+id/contactlist"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="25dp"
+            android:elevation="5dp">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+
+            android:background="@drawable/line_02"></LinearLayout>
+
+        <TextView
+            android:id="@+id/smsmassege"
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:text="SMS Message:" />
+
+        <EditText
+            android:id="@+id/massegeinput"
+            style="@style/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Change SMS message"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+
+            android:text=" # The message will be sent to these contacts if you dont response to the alarm within 2 minute" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+
+            android:background="@drawable/line_02"></LinearLayout>
+
+        <TextView
+            android:id="@+id/alertmassege"
+            style="@style/text"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:text="Alert Message:" />
+
+        <EditText
+            android:id="@+id/alertinput"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Change alert message"
+            android:inputType="text" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text=" # The alert message will be sent to your smart-phone in case of disconnection between the devices" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+
+            android:background="@drawable/line_02"></LinearLayout>
+
+        <TextView
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:text="Alert radius" />
+
+
+        <RadioGroup
+            android:id="@+id/range"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <RadioButton
+                android:id="@+id/small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10m/32Feet" />
+
+            <RadioButton
+                android:id="@+id/medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20m/65Feet" />
+
+            <RadioButton
+                android:id="@+id/large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30m/98 Feet" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+
+            android:background="@drawable/line_02"></LinearLayout>
+
+        <TextView
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:text="Alert sound" />
+
+
+        <RadioGroup
+            android:id="@+id/sound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <RadioButton
+                android:id="@+id/soundA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A" />
+
+            <RadioButton
+                android:id="@+id/soundB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B" />
+
+            <RadioButton
+                android:id="@+id/soundC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C" />
+
+            <RadioButton
+                android:id="@+id/soundD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+
+            android:background="@drawable/line_02"></LinearLayout>
+
+        <TextView
+            android:id="@+id/distancetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="dsds"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

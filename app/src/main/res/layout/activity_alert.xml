@@ -1,0 +1,198 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_final"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.4"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:orientation="vertical"></LinearLayout>
+
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1.5"
+
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:orientation="vertical"></LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="dsds"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:id="@+id/distancetv"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></LinearLayout>
+
+                <tr.xip.markview.MarkView
+                    android:id="@+id/circle"
+                    android:layout_width="156dp"
+                    android:layout_height="156dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/stop_alert_03"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/alertmassege"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corners"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text=""
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/timerValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/rounded_corners"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="aa"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/mapbtn"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/map" />
+
+        <!--<com.michaldrabik.tapbarmenulib.TapBarMenu-->
+
+        <!--android:id="@+id/tapBarMenu"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="56dp"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:layout_marginBottom="2dp"-->
+        <!-->-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/item1"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:paddingTop="10dp"-->
+
+        <!--/>-->
+
+        <!--<Space-->
+        <!--android:layout_width="56dp"-->
+        <!--android:layout_height="match_parent" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/item2"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:paddingTop="10dp" />-->
+
+
+        <!--</com.michaldrabik.tapbarmenulib.TapBarMenu>-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/maplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="7dp"
+        android:background="@android:color/black">
+
+        <fragment xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_margin="2dp"
+            tools:context="com.example.admin.beacon.MapsActivity" />
+
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Add"
+        app:showAsAction="ifRoom|withText"
+        android:title="Add"
+        android:visible="true"/>
+    <item
+        android:id="@+id/Remove"
+        app:showAsAction="ifRoom|withText"
+        android:title="Remove"
+        android:visible="true"/>
+    <!--<item-->
+        <!--android:id="@+id/Changemassege"-->
+        <!--app:showAsAction="ifRoom|withText"-->
+        <!--android:title="Change massege"-->
+        <!--android:visible="true"/>-->
+
+</menu>

@@ -1,0 +1,121 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/wallet_holo_blue_light"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.35"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></LinearLayout>
+
+                <tr.xip.markview.MarkView
+                    android:id="@+id/circle"
+                    android:layout_width="156dp"
+                    android:layout_height="156dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/stop"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/timerValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="aa"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:orientation="vertical"></LinearLayout>
+
+        <com.michaldrabik.tapbarmenulib.TapBarMenu
+
+            android:id="@+id/tapBarMenu"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="2dp">
+
+            <ImageView
+                android:id="@+id/item1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+
+                />
+
+            <Space
+                android:layout_width="56dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/item2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+
+
+        </com.michaldrabik.tapbarmenulib.TapBarMenu>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/maplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:layout_margin="7dp"
+        android:layout_gravity="center">
+
+        <fragment xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            tools:context="com.example.admin.beacon.MapsActivity" />
+
+
+    </LinearLayout>
+</FrameLayout>
